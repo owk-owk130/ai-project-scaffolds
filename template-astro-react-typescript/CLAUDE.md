@@ -83,7 +83,7 @@ src/
 
 - Tailwind CSS 4 の新しい高性能エンジンを使用
 - @tailwindcss/vite プラグインで直接統合（従来の @astrojs/tailwind は不使用）
-- ビルド速度が5x高速、増分ビルドが100x高速化
+- ビルド速度が 5x 高速、増分ビルドが 100x 高速化
 - 自動コンテンツ検出で設定不要
 - src/styles/global.css で @import "tailwindcss" により読み込み
 
@@ -116,14 +116,14 @@ src/
 - カスタム hooks でロジック分離
 - React コンポーネントはプレゼンテーション層に専念
 - Astro コンポーネントは静的部分とレイアウトを担当
-- テストファイルは src/__tests__ に統一配置
+- テストファイルは src/**tests** に統一配置
 - パスエイリアス（~）を積極的に使用
 
 ### Important Files
 
-- `astro.config.mjs`: Astro の設定（React統合、Tailwind、パスエイリアス、テスト環境）
+- `astro.config.mjs`: Astro の設定（React 統合、Tailwind、パスエイリアス、テスト環境）
 - `biome.json`: Biome の設定（VCS 連携、React 最適化ルール）
 - `tsconfig.json`: TypeScript の設定（Astro strict config、パスエイリアス）
-- `src/layouts/Layout.astro`: ベースレイアウト（Tailwind設定）
+- `src/layouts/Layout.astro`: ベースレイアウト（Tailwind 設定）
 
 このテンプレートは AI 開発に最適化されており、Astro の島アーキテクチャと React の柔軟性を組み合わせた効率的で保守性の高いコード作成をサポートします。

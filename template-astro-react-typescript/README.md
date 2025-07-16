@@ -1,115 +1,58 @@
-# Astro + React TypeScript Template
+# template-astro-react-typescript
 
-AI 開発用の Astro + React TypeScript 構成のテンプレートです。
+## 構成
 
-## 特徴
+- Astro 5 + React 19 + TypeScript
+- Tailwind CSS 4 (@tailwindcss/vite)
+- Vitest + @testing-library/react
+- Biome (formatter + linter)
+- Bun
 
-- **Astro Islands Architecture**: 静的部分は高速、インタラクティブ部分は React
-- **React 19 + TypeScript**: 最新の React 機能とタイプセーフティ
-- **Tailwind CSS 4**: 新しい高性能エンジンによる超高速スタイリング（ビルド5x高速）
-- **Vitest + Testing Library**: 包括的なテスト環境
-- **Biome**: 高速な formatter + linter
-- **Bun**: 高速パッケージマネージャー
-
-## 開発環境のセットアップ
+## セットアップ
 
 ```bash
-# 依存関係のインストール
 bun install
+bun run dev
+```
 
-# 開発サーバーの起動
+## コマンド
+
+```bash
+# 開発
 bun run dev
 
 # ビルド
 bun run build
 
-# プレビュー
-bun run preview
-```
-
-## 開発コマンド
-
-### コード品質
-
-```bash
-# フォーマット
-bun run format
-
-# リント
+# コード品質
 bun run lint
-
-# 型チェック
+bun run format
 bun run typecheck
-```
 
-### テスト
-
-```bash
-# テスト実行
+# テスト
 bun run test
-
-# テスト UI
 bun run test:ui
-```
 
-### 一括チェック
-
-```bash
-# すべてのチェックを実行
+# 一括チェック
 bun run check:all
 ```
 
-## プロジェクト構造
+## 構造
 
-```
+```text
 src/
-├── __tests__/           # テストファイル
-│   ├── components/      # React コンポーネントテスト
-│   ├── hooks/           # React hooks テスト
-│   └── setup.ts         # テスト設定
+├── __tests__/           # テスト
 ├── components/          # React コンポーネント
-├── hooks/               # React カスタムhooks
+├── hooks/               # React hooks
 ├── layouts/             # Astro レイアウト
-└── pages/               # Astro ページ
+├── pages/               # Astro ページ
+└── styles/              # CSS
 ```
 
-## 技術スタック詳細
+## 設定
 
-### Astro Islands
-
-静的な部分は Astro でサーバーサイドレンダリングし、必要な部分のみ React でハイドレーションします。
-
-```astro
-<!-- 静的な部分 -->
-<h1>タイトル</h1>
-
-<!-- インタラクティブな部分 -->
-<Counter client:load />
-```
-
-### パスエイリアス
-
-`~` エイリアスで src ディレクトリを参照できます：
-
-```typescript
-import { useCounter } from '~/hooks/useCounter'
-import { Counter } from '~/components/Counter'
-```
-
-### テスト駆動開発
-
-このテンプレートは TDD に最適化されています：
-
+- パスエイリアス: `~` で src を参照
+- Astro Islands: 静的部分は Astro、インタラクティブ部分は React
 - テストケースは日本語で記述
-- hooks とコンポーネントの両方をテスト
-- jsdom 環境で React コンポーネントをテスト
 
-## 開発ガイドライン
-
-- アロー関数を優先
-- named export を使用（default export は避ける）
-- 推論できる型は明示しない
-- コンポーネントのロジックは hooks に切り出し
-- 標準の fetch API を使用
-
-詳細な開発指示は `CLAUDE.md` を参照してください。
+詳細は `CLAUDE.md` を参照。
