@@ -8,7 +8,6 @@
   "files": {
     "ignoreUnknown": false,
     "includes": [
-      "src/**/*",
       "*.ts",
       "*.tsx",
       "*.js",
@@ -16,8 +15,8 @@
       "*.json",
       "*.html",
       "*.md",
-      "*.mjs",
       "*.css",
+      "*.mjs",
       "*.scss"
     ]
   },

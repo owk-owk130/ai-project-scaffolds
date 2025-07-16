@@ -1,9 +1,8 @@
-# template-vite-react-typescript
+# template-astro-react-typescript
 
 ## 構成
 
-- React 19 + TypeScript
-- Vite 7
+- Astro 5 + React 19 + TypeScript
 - Tailwind CSS 4 (@tailwindcss/vite)
 - Vitest + @testing-library/react
 - Biome (formatter + linter)
@@ -43,15 +42,17 @@ bun run check:all
 ```text
 src/
 ├── __tests__/           # テスト
+├── components/          # React コンポーネント
 ├── hooks/               # React hooks
-├── assets/              # 静的アセット
-├── App.tsx              # メインアプリケーション
-└── main.tsx             # エントリーポイント
+├── layouts/             # Astro レイアウト
+├── pages/               # Astro ページ
+└── styles/              # CSS
 ```
 
 ## 設定
 
 - パスエイリアス: `~` で src を参照
+- Astro Islands: 静的部分は Astro、インタラクティブ部分は React
 - テストケースは日本語で記述
 
 詳細は `CLAUDE.md` を参照。
