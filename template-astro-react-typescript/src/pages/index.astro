@@ -1,0 +1,33 @@
+---
+import { Counter } from '~/components/Counter'
+import Layout from '~/layouts/Layout.astro'
+---
+
+<Layout title="Astro + React">
+  <div class="flex justify-center items-center gap-8 mb-8">
+    <a href="https://astro.build" target="_blank" rel="noopener">
+      <img
+        src="https://astro.badg.es/v2/built-with-astro/small.svg"
+        alt="Built with Astro"
+        class="h-12 transition-all duration-300 hover:scale-110 will-change-transform"
+      />
+    </a>
+    <a href="https://react.dev" target="_blank" rel="noopener">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+        alt="React logo"
+        class="h-12 transition-all duration-300 hover:scale-110 will-change-transform"
+      />
+    </a>
+  </div>
+  
+  <h1 class="text-5xl leading-tight mb-8 font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+    Astro + React
+  </h1>
+  
+  <Counter client:load />
+  
+  <p class="text-gray-500 dark:text-gray-400 mt-8">
+    Click on the Astro and React logos to learn more
+  </p>
+</Layout>
