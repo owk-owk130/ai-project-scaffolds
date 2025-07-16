@@ -15,6 +15,7 @@
     "check:all": "bun run typecheck && bun run lint && bun run format && bun run test && bun run build"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^4.0.7",
     "@tailwindcss/vite": "^4.1.11",
     "@types/react": "^19.1.8",
@@ -32,7 +33,7 @@
     "@types/node": "^24.0.12",
     "@vitest/ui": "^3.2.4",
     "jsdom": "^26.1.0",
-    "typescript": "~5.8.3",
+    "typescript": "^5.8.3",
     "vitest": "^3.2.4"
   }
 }
