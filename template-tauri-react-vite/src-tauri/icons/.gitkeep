@@ -1,0 +1,11 @@
+# Icons directory for Tauri
+# Place your icon files here:
+# - 32x32.png
+# - 128x128.png
+# - 128x128@2x.png (256x256)
+# - icon.icns (macOS)
+# - icon.ico (Windows)
+# - icon.png (Linux/Android - 1024x1024)
+# 
+# For iOS, icons will be generated when running `tauri ios init`
+# For Android, additional icons will be generated when running `tauri android init`
