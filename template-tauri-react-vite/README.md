@@ -107,8 +107,6 @@ src-tauri/
 
 ## モバイル開発の注意事項
 
-ika
-
 ### Android
 
 - 最小 SDK バージョン: 21 (Android 5.0)
