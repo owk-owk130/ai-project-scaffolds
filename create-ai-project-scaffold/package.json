@@ -1,0 +1,57 @@
+{
+  "name": "create-ai-project-scaffold",
+  "version": "1.0.0",
+  "description": "AI開発用プロジェクトテンプレートのスキャフォールディングツール",
+  "type": "module",
+  "bin": {
+    "create-ai-project-scaffold": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "biome check --write .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "check:all": "bun run typecheck && bun run lint && bun run format && bun run test:run && bun run build",
+    "prepublishOnly": "npm run check:all"
+  },
+  "keywords": [
+    "ai",
+    "scaffold",
+    "template",
+    "react",
+    "tauri",
+    "astro",
+    "vite",
+    "cli"
+  ],
+  "author": "owk-owk130",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owk-owk130/ai-project-scaffolds.git",
+    "directory": "create-ai-project-scaffold"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "@clack/prompts": "^0.7.0",
+    "degit": "^2.8.4",
+    "execa": "^8.0.1",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.1",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^3.2.4"
+  }
+}
