@@ -1,12 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { beforeEach, describe, expect, test, vi } from 'vitest'
-import {
-  isDirectoryEmpty,
-  removeLockFiles,
-  updatePackageJson,
-  validateProjectName,
-} from '../utils'
+import { isDirectoryEmpty, removeLockFiles, updatePackageJson, validateProjectName } from '../utils'
 
 vi.mock('node:fs')
 

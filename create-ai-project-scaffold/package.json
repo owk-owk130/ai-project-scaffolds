@@ -38,6 +38,10 @@
     "url": "https://github.com/owk-owk130/ai-project-scaffolds.git",
     "directory": "create-ai-project-scaffold"
   },
+  "bugs": {
+    "url": "https://github.com/owk-owk130/ai-project-scaffolds/issues"
+  },
+  "homepage": "https://github.com/owk-owk130/ai-project-scaffolds/tree/main/create-ai-project-scaffold#readme",
   "engines": {
     "node": ">=18.0.0"
   },
