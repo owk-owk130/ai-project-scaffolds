@@ -1,9 +1,9 @@
-import { useCounter } from '~/hooks/useCounter'
-import viteLogo from '/vite.svg'
-import reactLogo from './assets/react.svg'
+import { useCounter } from "~/hooks/useCounter";
+import viteLogo from "/vite.svg";
+import reactLogo from "./assets/react.svg";
 
 function App() {
-  const { count, increment } = useCounter()
+  const { count, increment } = useCounter();
 
   return (
     <>
@@ -38,7 +38,7 @@ function App() {
       </div>
       <p className="text-gray-500">Click on the Vite and React logos to learn more</p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
